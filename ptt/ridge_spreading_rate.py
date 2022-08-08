@@ -333,6 +333,8 @@ def spreading_rates_dense(
                         spreading_velocity_magnitude,
                         spreading_obliquity_degrees,
                         math.degrees(arc_length),
-                        math.degrees(spreading_arc_normal_azimuth)))
+                        math.degrees(spreading_arc_normal_azimuth),
+                        spreading_feature.get_left_plate(),
+                        spreading_feature.get_right_plate()))
     
     return output_data
