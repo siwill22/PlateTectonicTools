@@ -15,7 +15,7 @@
 
 import pygplates
 import numpy as np
-import cartopy.crs as ccrs
+
 
 def plot_velocities_uv(x,y,u,v,ax):
     '''draw the velocity vectors in a map
@@ -32,6 +32,7 @@ def plot_velocities_uv(x,y,u,v,ax):
     -------
     A colour bar object
     '''
+    import cartopy.crs as ccrs
     u = np.array(u)
     v = np.array(v)
     mag = np.sqrt(u*u+v*v)
